@@ -1,0 +1,123 @@
+/* Section Background */
+#mentors, #supporters {
+    background-color: #F8F8F8;
+    padding-bottom: 20px;
+}
+
+/* Container */
+.s-container {
+    width: 70%;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Heading */
+.mainheading {
+    font-size: 30px;
+    padding: 20px 40px;
+    font-weight: 200;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Small Card */
+.small-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 30px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* Card Text */
+.card-subheading {
+    color: #232222;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0px;
+}
+
+.card-description {
+    color: gray;
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+/* ✅ Responsive Adjustments */
+
+/* 📌 Tablets (≤1024px) */
+@media (max-width: 1024px) {
+    .s-container {
+        width: 90%; /* Reduce width */
+    }
+
+    .small-card {
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .mainheading {
+        font-size: 26px;
+        padding: 15px 30px;
+    }
+}
+
+/* 📌 Mobile (≤768px) */
+@media (max-width: 768px) {
+    .s-container {
+        width: 95%;
+    }
+
+    .small-card {
+        flex-direction: column; 
+        justify-content: flex-start;
+        align-items: flex-start;/* Stack items */
+        /* text-align: center; */
+        padding: 15px;
+        margin: 10px;
+    }
+
+    .mainheading {
+        font-size: 24px;
+        text-align: center;
+        padding: 10px 20px;
+    }
+
+    .card-subheading {
+        font-size: 18px;
+    }
+
+    .card-description {
+        font-size: 14px;
+    }
+}
+
+/* 📌 Small Screens (≤480px) */
+@media (max-width: 480px) {
+    .s-container {
+        width: 100%;
+    }
+
+    .small-card {
+        width: 90%;
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .mainheading {
+        font-size: 22px;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .card-subheading {
+        font-size: 16px;
+    }
+
+    .card-description {
+        font-size: 13px;
+    }
+}

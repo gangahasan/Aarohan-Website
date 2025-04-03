@@ -17,12 +17,29 @@
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 } */
+ .main-body{
+  /* width: 60%; */
+  margin: 0 auto;
+ }
+ .nav-right a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-right a.active {
+  border-bottom: 2px solid teal;
+  font-weight: bold;
+  color: teal;
+}
+
 .section {
   /* height: 100vh; */
-  padding: 30px;
+  padding: 0px;
   margin-top: 60px; /* To prevent navbar overlap */
 }
-.section:target ~ .navbar .nav-right a[href="#about"],
+.section:target ~ .navbar .nav-left a[href="#home"],
 #about:target ~ .nav-right a[href="#about"],
 #mentors:target ~ .nav-right a[href="#mentors"],
 #partners:target ~ .nav-right a[href="#partners"],
@@ -47,9 +64,9 @@
   }
 }
 
-.card {
+/* .card {
   padding: 1em;
-}
+} */
 
 .read-the-docs {
   color: #888;

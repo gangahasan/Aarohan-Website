@@ -1,59 +1,72 @@
-.features{
+/* General styles */
+.scontainer{
+    width: 65%;
+}
+.features {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 20px;
-    width: 60%;
-    margin: 2px auto;
+    /* width: 70%; */
+    margin: 10px auto;
 }
-.skills{
+
+.skills {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    /* justify-content: flex-start; */
     gap: 10px;
 }
-.features .skills  h3{
+
+.features .skills h3 {
     font-size: 26px;
     font-weight: 400;
+    margin-bottom: 0px;
 }
-.container h3{
+
+.main-heading {
     width: 60%;
-    font-size: 28px;
+    font-size: 32px;
     font-weight: 600;
-    
+    font-family:'Times New Roman', Times, serif;
 }
-.objective{
-    width: 60%;
+
+.objective {
+    /* width: 60%; */
     background-color: #F8F8F8;
-    padding: 40px;
+    padding: 50px;
     border-radius: 10px;
 }
-.objective-1{
+
+.objective-1 {
     display: flex;
     align-items: center;
-    justify-content:center;
+    justify-content: center;
     gap: 10px;
 }
-h2{
+
+h2 {
     color: #1ED6B2;
 }
+
 ul {
-  list-style-type: disc; /* Ensures default bullet points */
-  color: black; /* Sets the text color */
+    list-style-type: disc;
+    color: black;
 }
 
 ul li::marker {
-  color: #1ED6B2; /* Changes bullet color */
-  font-size: 1.5em; /* Optional: Makes bullets larger */
+    color: #1ED6B2;
+    font-size: 1.5em;
 }
-.team-members > h3{
-    /* text-align: center; */
-    width: 65%;
+
+.team-members .team-title {
     margin: 30px auto;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+
 }
-.team{
-    width: 65%;
+
+.team {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -61,11 +74,135 @@ ul li::marker {
     justify-content: center;
     gap: 30px;
 }
-.candidate{
+
+.candidate {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
     background-color: #F8F8F8;
     padding: 20px;
 }
+
+.candidate p h3 {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* ============= MEDIA QUERIES FOR RESPONSIVENESS ============= */
+
+/* Tablet (<=1024px) */
+@media (max-width: 1024px) {
+    .features {
+        width: 80%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .skills {
+        align-items: center;
+    }
+
+    .main-heading {
+        width: 90%;
+        font-size: 40px;
+    }
+
+    .objective {
+        width: 80%;
+        padding: 30px;
+    }
+
+    .team {
+        width: 80%;
+    }
+
+    .candidate {
+        gap: 20px;
+        padding: 15px;
+    }
+}
+/* Small Mobile (<=480px) */
+@media (max-width: 480px) {
+    .features {
+        width: 100%;
+        gap: 10px;
+    }
+
+    .skills .skill-title {
+        font-size:40px ;
+        background-color: #1ED6B2;
+    }
+    .objective {
+        width: 100%;
+        padding: 15px;
+    }
+    .container .main-heading {
+        width: 90%;
+        font-size:4rem;
+
+    }
+
+    .team {
+        width: 100%;
+    }
+
+    .candidate {
+        flex-direction: column;
+        padding: 10px;
+        gap: 10px;
+    }
+}
+
+/* ✅ Mobile (≤768px) */
+@media (max-width: 768px) {
+    .features {
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .skills p {
+        align-items: center;
+        text-align: center;
+        width: 60%;
+        font-size: 26px;
+    }
+    .skills h3{
+        font-weight: bold;
+        padding: 20px;
+    }
+    .container .main-heading {
+        width: 90%;
+        font-size:4rem;
+    }
+
+    .objective {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .team {
+        width: 90%;
+    }
+
+    .candidate {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 20px;
+        gap: 15px;
+    }
+
+    .objective-1  {
+        flex-direction: column;
+        text-align: center;
+    }
+    .objective-1 p{
+        text-align: center;
+        align-items: center;
+        margin:10px auto;
+        width: 80%;
+    }
+}
+
+

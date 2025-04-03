@@ -8,10 +8,11 @@ import Donate from "./pages/Donate";
 import JoinUs from "./pages/JoinUs";
 import Home from "./pages/Home";
 import "./App.css"
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
-    <div>
+    <div className="main-body">
       <Navbar />
       <section id="home" className="section">
         <Home />
@@ -34,6 +35,7 @@ const App = () => {
       <section id="join" className="section">
         <JoinUs />
       </section>
+      <Footer />
     </div>
   );
 };

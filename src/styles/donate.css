@@ -1,0 +1,135 @@
+/* Donate Section */
+.donate {
+    width: 100%;
+}
+.s-container {
+    width: 70%;
+    margin: 0 auto;
+    display:flex;
+    flex-direction:column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+}
+/* Fund Details */
+.fund-details {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+    width: 100%;
+}
+
+/* Address Box */
+.address {
+    background-color: #F8F8F8;
+    width: 50%;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Bank Details */
+.bankdetails {
+    background-color: #1ABC9C;
+    width: 30%;
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Data Layout */
+.data {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+/* Text Styling */
+.body  {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    margin: 0px 20px;
+    padding-left: 0px 20px;
+    width: 90%;
+}
+
+b {
+    font-size: 14px;
+}
+
+p {
+    padding: 0px;
+    margin: 4px;
+}
+
+/* ✅ Responsive Adjustments */
+
+/* 📌 Tablets (≤1024px) */
+@media (max-width: 1024px) {
+    .fund-details {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .address, .bankdetails {
+        width: 80%; /* Increase width to fill screen */
+        margin: 15px auto;
+    }
+
+    .bankdetails {
+        align-items: center;
+        text-align: center;
+    }
+}
+
+/* 📌 Mobile (≤768px) */
+@media (max-width: 768px) {
+    .fund-details {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .address, .bankdetails {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .bankdetails {
+        align-items: center;
+    }
+
+    .data {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* 📌 Small Screens (≤480px) */
+@media (max-width: 480px) {
+    .address, .bankdetails {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .bankdetails {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .data {
+        flex-direction: column;
+    }
+}

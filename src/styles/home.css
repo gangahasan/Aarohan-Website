@@ -1,28 +1,23 @@
 /* General Styles */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  /* background-color: hsl(0, 0%, 96%); */
-}
+
 .container {
-  display:flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   margin: 0px;
 }
 
 /* Content Section */
 .content {
-  background-color: #1ABC9C;
+  background-color: #1abc9c;
   opacity: 10;
   color: white;
   text-align: center;
   width: 370px;
   padding: 10px;
   position: relative;
-  z-index: 20;
+  z-index: 200;
   margin: 0px auto;
   word-wrap: break-word; /* Wrap text within box */
 }
@@ -62,30 +57,31 @@ body {
 
 /* History Section */
 .history {
-  background-color: #F8F8F8; /* Light Gray */
-  padding: 50px 20px;
-  margin: 50px;
-  width: 80%;
+  background-color: #f8f8f8; /* Light Gray */
+  width: 100%;
+  margin: 2rem 0;
 }
-
-/* Video Section */
-.video {
+.history-content {
   margin: 0 auto;
-  text-align: left;
-  background-color: white;
-  padding: 20px;
-  border-radius: 10px;
+  padding: 50px 20px;
+  width: 65%;
 }
-
+.history-content h3{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 32px;
+}
 .video-content {
   font-size: 1rem;
   line-height: 1.6;
-  color: #666;
+  color: #4d4c4c;
   margin-top: 10px;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  .history-content {
+    width: 90%;
+  }
   .content {
     width: 250px;
   }
@@ -95,7 +91,66 @@ body {
     height: 200px;
   }
 
-  .history h2 {
-    font-size: 1.5rem;
+  .history h3 {
+    font-size: 4rem;
+  }
+}
+/* Container for the video section */
+.video {
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+  justify-content: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+
+/* YouTube Video */
+.video iframe {
+  width: 100%;
+  max-width: 940px;
+  height: auto;
+  aspect-ratio: 16 / 9; /* Ensures the correct aspect ratio */
+}
+
+/* Video content (text) */
+.video .video-content {
+  max-width: 800px;
+  font-size:26px;
+  color: black;
+  text-align: left;
+  line-height: 1.6;
+  
+}
+
+/* Tablet (<=1024px) */
+@media (max-width: 1024px) {
+  .video {
+    flex-direction: column; /* Stack video and text */
+    text-align: center;
+  }
+
+  .video iframe {
+    width: 95%;
+    max-width: 1000px;
+  }
+
+  .video-content {
+    width: 90%;
+    font-size: 26px;
+  }
+}
+
+/* Small Mobile (<=480px) */
+@media (max-width: 480px) {
+  .video iframe {
+    width: 100%;
+  }
+
+  .video .video-content {
+    width: 100%;
+    font-size: 26px;
+    text-align: left;
   }
 }
