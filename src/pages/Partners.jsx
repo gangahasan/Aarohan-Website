@@ -2,8 +2,8 @@ import React from 'react'
 
 const Partners = () => {
   return (
-    <div id="partners">
-      <div className="s-container">
+    <div id="partners" className='s-container'>
+      <div className="scontainer">
         <h3 className="mainheading">Our Partners</h3>
         <div className="small-card" style={{ backgroundColor: "#F8F8F8" }}>
           <img src="https://aarohaninitiative.org/images/Akanksha.png" />

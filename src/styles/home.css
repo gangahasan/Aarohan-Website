@@ -1,20 +1,26 @@
-/* General Styles */
 
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  margin: 0px;
+.s-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        width: 100%;
+        /* width:65%; */
 }
-
+.top-section{
+    width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 /* Content Section */
 .content {
   background-color: #1abc9c;
   opacity: 10;
   color: white;
   text-align: center;
-  width: 370px;
+  width: 50%;
   padding: 10px;
   position: relative;
   z-index: 200;
@@ -24,7 +30,7 @@
 
 /* Image Scroll Section (Overlapping) */
 .imagescroll {
-  width: 600px;
+  width: 500px;
   height: 400px;
   background: linear-gradient(to right, #ff7e5f, #feb47b);
   display: flex;
@@ -59,28 +65,45 @@
 .history {
   background-color: #f8f8f8; /* Light Gray */
   width: 100%;
-  margin: 2rem 0;
+  margin: 1rem 0;
 }
 .history-content {
   margin: 0 auto;
-  padding: 50px 20px;
+  padding: 30px 20px;
   width: 65%;
 }
 .history-content h3{
     font-family:'Times New Roman', Times, serif;
     font-size: 32px;
 }
-.video-content {
-  font-size: 1rem;
+.history-content .video .video-content {
+  font-size: 16px;
+  font-weight: 500;
+  word-spacing: 2px;
   line-height: 1.6;
-  color: #4d4c4c;
+  color: #373636;
   margin-top: 10px;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .container {
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+    .s-container{
+        width: 100%;
+    }
+    .content{
+        width: 100%;
+    }
+    .history{
+        width: 100%;
+    }
   .history-content {
-    width: 90%;
+    width: 100%;
+    padding-top: 0px;
   }
   .content {
     width: 250px;
@@ -93,6 +116,15 @@
 
   .history h3 {
     font-size: 4rem;
+  }
+  .video iframe {
+    width: 100%;
+  }
+
+  .video .video-content {
+    width: 100%;
+    font-size: 26px;
+    text-align: left;
   }
 }
 /* Container for the video section */

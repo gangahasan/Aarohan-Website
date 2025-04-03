@@ -6,17 +6,19 @@
 
 /* Container */
 .s-container {
-    width: 70%;
+    width: 65%;
     margin: 0 auto;
     display: block;
+    padding: 20px;
 }
 
 /* Heading */
 .mainheading {
     font-size: 30px;
-    padding: 20px 40px;
+    padding: 20px 20px;
     font-weight: 200;
     font-family: 'Times New Roman', Times, serif;
+    margin: 0px;
 }
 
 /* Small Card */
@@ -26,7 +28,6 @@
     justify-content: center;
     gap: 30px;
     padding: 30px;
-    margin: 20px;
     background-color: white;
     border-radius: 10px;
 }
@@ -59,7 +60,7 @@
     }
 
     .mainheading {
-        font-size: 26px;
+        /* font-size: 26px; */
         padding: 15px 30px;
     }
 }
@@ -80,9 +81,10 @@
     }
 
     .mainheading {
-        font-size: 24px;
+        /* font-size: 30px; */
         text-align: center;
         padding: 10px 20px;
+
     }
 
     .card-subheading {
@@ -108,7 +110,7 @@
     }
 
     .mainheading {
-        font-size: 22px;
+        /* font-size: 26px; */
         text-align: center;
         padding: 10px;
     }

@@ -3,8 +3,8 @@ import "../styles/mentors.css"
 
 const Mentors = () => {
   return (
-    <div id="mentors" class="section grey">
-      <div className="s-container">
+    <div id="mentors" class="s-container">
+      <div className="scontainer">
         <h3 className="mainheading">Our Mentors</h3>
         <div className="small-card">
           <div className="card-left">

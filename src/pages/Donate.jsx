@@ -3,8 +3,8 @@ import "../styles/donate.css"
 
 const Donate = () => {
   return (
-    <div className="donate">
-      <div className="s-container">
+    <div className="s-container">
+      <div className="scontainer">
         <h3 className="mainheading">Donate to Aarohan</h3>
         <div className='body'>
           <p>

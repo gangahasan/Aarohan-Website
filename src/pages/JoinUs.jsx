@@ -2,8 +2,8 @@ import React from 'react'
 
 const JoinUs = () => {
   return (
-    <div id="join" style={{ backgroundColor: "#F8F8F8",padding:"30px" }}>
-      <div className="s-container">
+    <div id="join" className="s-container"style={{ backgroundColor: "#F8F8F8",padding:"30px" }}>
+      <div className="scontainer">
         <h3 style={{fontSize:'30px'}}>Join Us</h3>
         <p>
           Are you passionate about education and like to be a change-maker?

@@ -3,7 +3,7 @@ import "../styles/about.css"
 
 const About = () => {
   return (
-    <div className="container">
+    <div className="s-container">
       <div className='scontainer'>
         <h3 className="main-heading">
           A one stop learning hub for the community

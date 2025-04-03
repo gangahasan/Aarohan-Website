@@ -2,8 +2,8 @@ import React from 'react'
 
 const Supporters = () => {
   return (
-    <div id="supporters">
-      <div className="s-container">
+    <div id="supporters" className='s-container'>
+      <div className="scontainer">
         <h3 className="mainheading">Our Supporters</h3>
         <div className="small-card">
           <img

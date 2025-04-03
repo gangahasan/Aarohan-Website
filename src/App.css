@@ -18,7 +18,7 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 } */
  .main-body{
-  /* width: 60%; */
+  /* width: 100%; */
   margin: 0 auto;
  }
  .nav-right a {
