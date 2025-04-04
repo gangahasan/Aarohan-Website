@@ -6,7 +6,6 @@
         justify-content: center;
         background-color: white;
         width: 100%;
-        /* width:65%; */
 }
 .top-section{
     width: 65%;
@@ -30,7 +29,7 @@
 
 /* Image Scroll Section (Overlapping) */
 .imagescroll {
-  width: 500px;
+  width: 50%;
   height: 400px;
   background: linear-gradient(to right, #ff7e5f, #feb47b);
   display: flex;
@@ -45,11 +44,11 @@
 }
 
 /* Smooth Scrolling for Images */
-.imagescroll img {
+.imagescroll img{
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  animation: scrollImages 10s linear infinite;
+  /* object-fit: cover; */
+  animation: scrollImages 5s linear infinite;
 }
 
 @keyframes scrollImages {
@@ -87,16 +86,23 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .container {
+    .top-section{
         width: 100%;
-        margin: 0px;
-        padding: 0px;
-    }
-    .s-container{
-        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
     }
     .content{
         width: 100%;
+    }
+    .content h1{
+        font-size: 32px;
+        font-weight: 400px;
+        /* line-height: 1.5; */
+    }
+    .content p{
+        color: rgb(255, 255, 255);
     }
     .history{
         width: 100%;
@@ -105,17 +111,13 @@
     width: 100%;
     padding-top: 0px;
   }
-  .content {
-    width: 250px;
-  }
-
   .imagescroll {
     width: 100%;
-    height: 200px;
+    height: 300px;
   }
 
   .history h3 {
-    font-size: 4rem;
+    font-size: 2rem;
   }
   .video iframe {
     width: 100%;

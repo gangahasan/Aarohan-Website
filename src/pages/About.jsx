@@ -20,7 +20,7 @@ const About = () => {
           </div>
           <div className="skills">
             <img src="https://aarohaninitiative.org/images/2.svg" alt="image" />
-            <h3>Skill building</h3>
+            <h3 className='skill-title'>Skill building</h3>
             <p>
               for adults The center also provides relevant skill building
               courses such as sewing, stitching and embroidery for adults to
@@ -29,7 +29,7 @@ const About = () => {
           </div>
           <div className="skills">
             <img src="https://aarohaninitiative.org/images/3.svg" alt="image" />
-            <h3>Upliftment for the community</h3>
+            <h3 className='skill-title'>Upliftment for the community</h3>
             <p>
               We focus on extracting, building and using local human capital of
               the community. It also creates an avenue for sharing among
@@ -40,7 +40,7 @@ const About = () => {
         <div className="objective">
           <div className="objective-1">
             <div className="Goal">
-              <h2>Goal</h2>
+              <h2 className='skill-title'>Goal</h2>
               <p>
                 To create self-sustainable community centers that provides
                 meaningful education to children, impart livelihood skills and
@@ -50,7 +50,7 @@ const About = () => {
               </p>
             </div>
             <div className="vision">
-              <h2>Vision</h2>
+              <h2 className='skill-title'>Vision</h2>
               <p>
                 Aid the nation building process by creating dynamic,
                 self-sustainable and knowledgeable societies by creating

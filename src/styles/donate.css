@@ -101,17 +101,20 @@ p {
         align-items: center;
         text-align: center;
     }
+    .s-container{
+        width: 100%;
+    }
 
     .address, .bankdetails {
         width: 90%;
         padding: 15px;
     }
 
-    .bankdetails {
-        align-items: center;
+    .bankdetails{
+        align-items:center;
     }
 
-    .data {
+    .data div{
         flex-direction: column;
         align-items: center;
     }
@@ -125,8 +128,8 @@ p {
     }
 
     .bankdetails {
-        font-size: 14px;
-        text-align: center;
+        font-size: 18px;
+        align-items: center;
     }
 
     .data {

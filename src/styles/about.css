@@ -101,10 +101,12 @@ ul li::marker {
 
     .skills {
         align-items: center;
+        gap: 0px;
+        margin: 10px;
     }
 
-    .main-heading {
-        width: 90%;
+    .scontainer .main-heading {
+        width: 100%;
         font-size: 40px;
     }
 
@@ -129,17 +131,16 @@ ul li::marker {
         gap: 10px;
     }
 
-    .skills .skill-title {
-        font-size:40px ;
-        background-color: #1ED6B2;
+    .skills > .skill-title {
+        font-size:20px ;
     }
     .objective {
         width: 100%;
         padding: 15px;
     }
-    .container .main-heading {
+    .scontainer .main-heading {
         width: 90%;
-        font-size:4rem;
+        font-size:2rem;
 
     }
 
@@ -156,6 +157,9 @@ ul li::marker {
 
 /* ✅ Mobile (≤768px) */
 @media (max-width: 768px) {
+    .scontainer{
+        width: 100%;
+    }
     .features {
         width: 90%;
         flex-direction: column;
@@ -164,25 +168,26 @@ ul li::marker {
     .skills p {
         align-items: center;
         text-align: center;
-        width: 60%;
-        font-size: 26px;
+        width: 100%;
+        font-size: 16px;
     }
     .skills h3{
-        font-weight: bold;
-        padding: 20px;
+        font-weight:bolder;
+        padding: 5px;
     }
-    .container .main-heading {
-        width: 90%;
-        font-size:4rem;
+    .scontainer .main-heading {
+        width: 100%;
+        font-size:26px;
     }
-
     .objective {
         width: 90%;
         padding: 20px;
     }
-
+    .team-members{
+        width: 100%;
+    }
     .team {
-        width: 90%;
+        width: 100%;
     }
 
     .candidate {
@@ -191,17 +196,18 @@ ul li::marker {
         justify-content: flex-start;
         padding: 20px;
         gap: 15px;
+        width: 100%;
     }
 
     .objective-1  {
         flex-direction: column;
-        text-align: center;
+        align-items: flex-start;
     }
     .objective-1 p{
-        text-align: center;
-        align-items: center;
+        /* text-align: center; */
+        align-items: flex-start;
         margin:10px auto;
-        width: 80%;
+        width: 100%;
     }
 }
 

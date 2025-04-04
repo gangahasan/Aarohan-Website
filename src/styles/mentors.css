@@ -1,5 +1,5 @@
 /* Section Background */
-#mentors, #supporters {
+#mentors, #supporters,#partners {
     background-color: #F8F8F8;
     padding-bottom: 20px;
 }
@@ -98,7 +98,7 @@
 
 /* 📌 Small Screens (≤480px) */
 @media (max-width: 480px) {
-    .s-container {
+    .s-container , .scontainer{
         width: 100%;
     }
 
