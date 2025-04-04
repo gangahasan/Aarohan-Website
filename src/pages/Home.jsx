@@ -14,8 +14,8 @@ const Home = () => {
       "/images/p6.jpg",
       "/images/p7.jpg",
       "/images/p8.jpg",
-      "../images/p9.jpg",
-      "../images/p10.jpg",
+      "/images/p9.jpg",
+      "/images/p10.jpg",
     ];
     const settings = {
       dots: true,
@@ -36,7 +36,7 @@ const Home = () => {
         setCurrentIndex((prevIndex) =>
           prevIndex === sliderImages.length - 1 ? 0 : prevIndex + 1
         );
-      }, 2000);
+      }, 3000);
 
       return () => clearInterval(interval);
     }, []);
