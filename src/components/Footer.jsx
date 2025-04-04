@@ -1,12 +1,12 @@
-import React from 'react'
-import "../styles/footer.css"
+import React from "react";
+import "../styles/footer.css";
 
 const Footer = () => {
   return (
-    <div className='footerbar'>
+    <div className="footerbar">
       <p>© 2019 Aarohan. All rights reserved. Designed by Ganga</p>
     </div>
   );
-}
+};
 
-export default Footer
+export default Footer;
