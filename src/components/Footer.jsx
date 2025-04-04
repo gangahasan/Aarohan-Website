@@ -1,8 +1,9 @@
 import React from 'react'
+import "../styles/footer.css"
 
 const Footer = () => {
   return (
-    <div style={{backgroundColor:"#464646",color:"white",padding:"30px",textAlign:"center"}}>
+    <div className='footerbar'>
       <p>© 2019 Aarohan. All rights reserved. Designed by Ganga</p>
     </div>
   );

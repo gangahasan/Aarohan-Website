@@ -1,0 +1,21 @@
+.footerbar{
+    background-color:#464646;
+    color:white;
+    padding:30px;
+    text-align:center;
+}
+@media (max-width:768px){
+   .footerbar {
+     padding: 5px;
+     width: 100%;
+     margin: 0 auto;
+   }  
+}
+@media(max-width:480px){
+   .footerbar {
+     padding: 5px;
+     width: 100%;
+     margin: 0 auto;
+   }
+   
+}
