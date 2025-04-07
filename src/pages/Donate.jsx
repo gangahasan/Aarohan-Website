@@ -1,12 +1,27 @@
-import React from 'react'
-import "../styles/donate.css"
+import React, { useEffect, useRef } from "react";
+import "../styles/donate.css";
 
 const Donate = () => {
+  const formRef = useRef(null);
+
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://checkout.razorpay.com/v1/payment-button.js";
+    script.setAttribute("data-payment_button_id", "pl_QEtavNGw7lqEH7");
+    script.async = true;
+
+    // Append to the form container
+    if (formRef.current) {
+      formRef.current.innerHTML = ""; // Clear existing
+      formRef.current.appendChild(script);
+    }
+  }, []);
   return (
-    <div id="donate"className="s-container">
+    <div id="donate" className="s-container">
       <div className="scontainer">
         <h3 className="mainheading">Donate to Aarohan</h3>
-        <div className='body'>
+
+        <div className="body">
           <p>
             Aarohan requires your support. You can help not just financially but
             more importantly with resources. There may be many books and
@@ -24,6 +39,7 @@ const Donate = () => {
             Cheque / Demand Draft / Direct Bank transfer.
           </p>
         </div>
+
         <div className="fund-details">
           <div className="address">
             <p>
@@ -72,8 +88,9 @@ const Donate = () => {
           </div>
         </div>
       </div>
+      <div ref={formRef}>Donate Now</div>
     </div>
   );
-}
+};
 
-export default Donate
+export default Donate;

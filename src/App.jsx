@@ -31,6 +31,7 @@ const App = () => {
       </section>
       <section id="donate" className="section">
         <Donate />
+     
       </section>
       <section id="join" className="section">
         <JoinUs />
