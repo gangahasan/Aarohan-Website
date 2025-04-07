@@ -36,20 +36,23 @@
 .bankdetails {
     background-color: #1ABC9C;
     width: 30%;
-    margin-top: 30px;
-    padding: 20px;
+    margin-top: 20px;
+    padding:10px 30px;
     border-radius: 10px;
     color: white;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
+.bankdetails h3{
+    margin: 10px;
 
+}
 /* Data Layout */
 .data {
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
+     display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 0px 30px;
 }
 
 /* Text Styling */
@@ -70,7 +73,25 @@ b {
 
 p {
     padding: 0px;
-    margin: 4px;
+    margin: 2px;
+}
+.copy-field {
+  margin-bottom: 10px;
+ 
+}
+
+.copy-field p {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.copy-btn {
+  font-size: 1.1rem;
+}
+.payment-button{
+    width: 40%;
+    margin: 20px auto;
 }
 
 /* ✅ Responsive Adjustments */

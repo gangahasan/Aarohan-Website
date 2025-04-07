@@ -1,21 +1,43 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef,useState } from "react";
 import "../styles/donate.css";
+import { FaRegCopy } from "react-icons/fa";
 
+const bankInfo = [
+  { label: "Account Name", value: "Aarohan", key: "accountName" },
+  { label: "Branch Code", value: "8642", key: "branchCode" },
+  {
+    label: "Bank Account Number",
+    value: "864210310000283",
+    key: "accountNumber",
+  },
+  { label: "Branch Name", value: "Saroornagar, Hyderabad", key: "branchName" },
+  { label: "Bank", value: "Bank of India", key: "bank" },
+  { label: "IFSC Code", value: "BKID0008642", key: "ifsc" },
+];
 const Donate = () => {
   const formRef = useRef(null);
+  const [copiedKey, setCopiedKey] = useState("");
+ 
 
   useEffect(() => {
-    const script = document.createElement("script");
-    script.src = "https://checkout.razorpay.com/v1/payment-button.js";
-    script.setAttribute("data-payment_button_id", "pl_QEtavNGw7lqEH7");
-    script.async = true;
+    const button = document.createElement("script");
+    button.src = "https://checkout.razorpay.com/v1/payment-button.js";
+    button.setAttribute("data-payment_button_id", "pl_QEtavNGw7lqEH7");
+    button.async = true;
 
     // Append to the form container
     if (formRef.current) {
       formRef.current.innerHTML = ""; // Clear existing
-      formRef.current.appendChild(script);
+      formRef.current.appendChild(button);
     }
   }, []);
+  const handleCopy = (value, key) => {
+    navigator.clipboard.writeText(value).then(() => {
+      setCopiedKey(key);
+      setTimeout(() => setCopiedKey(""), 1000); // Reset after 2s
+    });
+  };
+
   return (
     <div id="donate" className="s-container">
       <div className="scontainer">
@@ -67,28 +89,29 @@ const Donate = () => {
           </div>
           <div className="bankdetails">
             <h3>Bank Details</h3>
-            <div className="data">
-              <div>
-                <b>Account Name</b>
-                <p>Aarohan</p>
-                <b>Branch Code</b>
-                <p>8642</p>
-                <b>Bank Account Number </b>
-                <p>864210310000283</p>
-                <b>Branch Name</b>
-                <p> Saroornagar, Hyderabad</p>
-              </div>
-              <div>
-                <b>Bank</b>
-                <p>Bank of India</p>
-                <b>IFSC Code</b>
-                <p>BKID0008642</p>
+              <div className="data">
+                {bankInfo.map((item) => (
+                  <div
+                    key={item.key}
+                    className="copy-field"
+                    onClick={() => handleCopy(item.value, item.key)}
+                  >
+                    <b>{item.label}</b><br/>
+                    <p style={{ cursor: "pointer" }}>
+                      {item.value}
+                      <span className="copy-btn" style={{ marginLeft: "10px" }}>
+                        {copiedKey === item.key ? "✅" : <FaRegCopy />}
+                      </span>
+                    </p>
+                  </div>
+                ))} 
+                
+              <div ref={formRef} className="payment-button"></div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div ref={formRef}>Donate Now</div>
+     
+    </div>
     </div>
   );
 };

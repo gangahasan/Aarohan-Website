@@ -33,6 +33,15 @@
     margin: 20px;
   }
 }
+@media (max-width:480px){
+  .section{
+    padding: 0;
+    margin: 20px;
+  }
+  .main-body{
+    width: 100%;
+  }
+}
 .section:target ~ .navbar .nav-left a[href="#home"],
 #about:target ~ .nav-right a[href="#about"],
 #mentors:target ~ .nav-right a[href="#mentors"],

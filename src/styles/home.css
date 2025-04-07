@@ -130,9 +130,13 @@
     width: 100%;
     padding-top: 0px;
   }
-  .imagescroll {
+  .scroll-container {
+    width: 105%;
+    height: 400px;
+    margin-left: 0px;
+  }
+  .carousel-wrapper{
     width: 100%;
-    height: 300px;
   }
 
   .history h3 {
